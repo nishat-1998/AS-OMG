@@ -30,6 +30,7 @@ const Book = () => {
       };
     const handleBooking= ()=>{
      const newBooking ={...loggedInUser, ...selectedDate};
+     // Back-End Test
      fetch('http://localhost:5000/addBooking',{
        method:'POST',
        headers:{'Content-type': 'application/json'},
